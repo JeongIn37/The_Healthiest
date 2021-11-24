@@ -43,9 +43,16 @@ button {
 
 .input_file {
   margin-left: 64%;
-  margin-bottom: 1%;
+  margin-bottom: 3%;
+  width: 30%;
 }
-
+#file {
+  color: #767676;
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
 .btn-completion {
   background-color: #61a0e8;
   border-radius: 50px;
@@ -80,7 +87,7 @@ button {
 
 .modal-b {
   background-color: #0e53a0;
-  width: 25%;
+  width: 30%;
   padding-top: 0.7%;
   padding-bottom: 0.7%;
   border-radius: 30px;

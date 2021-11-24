@@ -16,35 +16,73 @@
       crossorigin="anonymous"
     />
     <title>challenge-stamp</title>
+    <script type="text/javascript" src="/script/challenge_stamp.js"></script>
   </head>
   <body>
     <header>
       <nav class="navbar">
-          <a id="logo" href="/main">
-              <img src="../img/nav-logo.png" class="navbar-brand">
-          </a>
-          <form class="d-flex">
-              <a href="#" class="btn" id="btn1" tabindex="-1" role="button" aria-disabled="true">마이페이지</a> &nbsp;&nbsp;
-              <a href="/" class="btn" id="btn2" tabindex="-1" role="button" aria-disabled="true">로그아웃</a>
-              <div class="nav-item dropdown">
-                  <button class="nav-link" data-toggle="dropdown" aria-expanded="true">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 30 30" role="img" focusable="false">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/>
-                      </svg>
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="/info2">소개 페이지</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="/health2">건강 관리</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="/community">커뮤니티</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="/challenge/introduce">챌린지</a>
-                  </div> 
-              </div>
-          </form>
+        <a id="logo" href="/main">
+          <img id="1" src="../img/nav-logo.png" class="navbar-brand" />
+        </a>
+        <form class="d-flex">
+          <a
+            href="#"
+            class="btn"
+            id="btn1"
+            tabindex="-1"
+            role="button"
+            aria-disabled="true"
+            >마이페이지</a
+          >
+          &nbsp;&nbsp;
+          <a
+            href="/"
+            class="btn"
+            id="btn2"
+            tabindex="-1"
+            role="button"
+            aria-disabled="true"
+            >로그아웃</a
+          >
+          <div class="nav-item dropdown">
+            <button
+              class="nav-link"
+              data-toggle="dropdown"
+              aria-expanded="true"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2.5em"
+                height="2.5em"
+                viewBox="0 0 30 30"
+                role="img"
+                focusable="false"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="2"
+                  d="M4 7h22M4 15h22M4 23h22"
+                />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu dropdown-menu-right"
+              aria-labelledby="navbarDropdown"
+            >
+              <a class="dropdown-item" href="/info2">소개 페이지</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/health2">건강 관리</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/community">커뮤니티</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/challenge/introduce">챌린지</a>
+            </div>
+          </div>
+        </form>
       </nav>
-  </header>
+    </header>
     <div id="top_back_img">
       <div class="stamp-header">챌린지 스탬프</div>
       <div class="color-window">
@@ -76,117 +114,336 @@
       <div class="stamp-board">
         <table class="stamp-table">
           <tr>
-            <td><img src="../img/stamp.png" alt="stamp" /></td>
-            <td><img src="../img/stamp.png" alt="stamp" /></td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-1"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-2"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-3"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-4"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
-            </td>
-            <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-5"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-6"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
-            </td>
-            <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
-            </td>
-            <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
-            </td>
-            <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
-            </td>
-            <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
-            </td>
-            <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
-            </td>
-            <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
-            </td>
-            <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
-            </td>
-            <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
-            </td>
-            <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-7"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
           </tr>
           <tr>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-8"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-9"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-10"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-11"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-12"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-13"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-14"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
           </tr>
           <tr>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-15"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-16"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-17"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-18"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-19"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-20"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
             <td>
-              <img src="../img/empty-stamp.png" alt="empty-stamp" />
+              <img
+                id="stamp-21"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                id="stamp-22"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
+            </td>
+            <td>
+              <img
+                id="stamp-23"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
+            </td>
+            <td>
+              <img
+                id="stamp-24"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
+            </td>
+            <td>
+              <img
+                id="stamp-25"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
+            </td>
+            <td>
+              <img
+                id="stamp-26"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
+            </td>
+            <td>
+              <img
+                id="stamp-27"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
+            </td>
+            <td>
+              <img
+                id="stamp-28"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                id="stamp-29"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
+            </td>
+            <td>
+              <img
+                id="stamp-30"
+                src="../img/empty-stamp.png"
+                alt="empty-stamp"
+              />
             </td>
           </tr>
         </table>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="success"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <br />
+            <br />
+            <div class="modal-h">챌린지 인증에 성공하였습니다.</div>
+            <br />
+            <br />
+            <button
+              class="modal-b"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              스탬프 페이지로 돌아가기
+            </button>
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="fail"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <br />
+            <br />
+            <div class="modal-h">챌린지 인증에 실패하였습니다.</div>
+            <br />
+            <br />
+            <div>
+              <button
+                class="modal-btn-reason"
+                data-toggle="modal"
+                data-target="#fail-reason"
+                type="button"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                인증 실패 이유 확인하기
+              </button>
+            </div>
+            <div>
+              <button
+                class="modal-btn"
+                type="button"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                스탬프 페이지로 돌아가기
+              </button>
+            </div>
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="fail-reason"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <br />
+            <br />
+            <div class="modal-h" id="content">
+              총 10,000보를 채우지 못하였습니다.
+            </div>
+            <br />
+            <br />
+            <button
+              class="modal-btn-close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              닫기
+            </button>
+            <button
+              class="modal-btn-qna"
+              onclick="location.href = '/mypage/ask'"
+            >
+              문의하기
+            </button>
+            <br />
+            <br />
+          </div>
+        </div>
       </div>
     </div>
     <script

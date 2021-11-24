@@ -108,3 +108,67 @@ button {
   margin-left: 10%;
   margin-right: auto;
 }
+
+.modal-h {
+  text-align: center;
+  font-weight: bold;
+  font-size: 280%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.modal-c {
+  margin-top: 2%;
+}
+.modal-cc {
+  font-size: 160%;
+  margin-right: 10%;
+  margin-left: auto;
+}
+
+.modal-btn {
+  background-color: #0e53a0;
+  width: 35%;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
+  border-radius: 30px;
+  font-weight: bold;
+  color: white;
+  font-size: 160%;
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+}
+
+.modal-btn-reason {
+  background-color: #bfef00;
+  width: 35%;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
+  border-radius: 30px;
+  font-weight: bold;
+  color: #191919;
+  font-size: 160%;
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+  margin-bottom: 2%;
+}
+
+.modal-btn-close {
+  color: #61a0e8;
+  background-color: #ffffff;
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+  width: 15%;
+  font-size: 160%;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
+  margin-right: 5%;
+}
+
+.modal-btn-qna {
+  background-color: #0e53a0;
+  width: 15%;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
+  border-radius: 30px;
+  font-weight: bold;
+  color: white;
+  font-size: 160%;
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+}
