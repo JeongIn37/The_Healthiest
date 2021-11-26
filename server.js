@@ -330,15 +330,9 @@ app.get('/mypage/challengeNone', 로그인했니, function (req, res) {
 });
 
 
-app.get('/mypage/mywriting', 로그인했니, function (req, res) {
-    console.log(req.user);
-    res.render('mypage/mywriting.ejs', {user_id : req.user.user_id});
-});
 
-app.get('/mypage/revisingwriting', 로그인했니, function (req, res) {
-    console.log(req.user);
-    res.render('mypage/revisingwriting.ejs', {user_id : req.user.user_id});
-});
+
+
 app.get('/mypage/settingAccount', 로그인했니, function (req, res) {
     console.log(req.user);
     res.render('mypage/setting.ejs', {user_id : req.user.user_id});
@@ -409,3 +403,24 @@ app.get('/mypage/checkmail/:id', function (req, res) {
     })
 });
 
+// 내가 쓴 글 함에 쓴 글 불러오기 
+
+app.get('/mypage/mywriting', function (req, res) {
+    console.log(req.user.user_id)
+    db.collection('Post').find().toArray(function (err, result){
+        
+        res.render('mypage/mywriting.ejs', {posts: result, user_id : req.user.user_id})
+    })
+});
+
+// 쓴글 (디테일)  불러오기
+
+app.get('/mypage/revisingwriting/:id ', function (req, res) {
+    db.collection('Post').findOne({post_id : parseInt(req.params.id) }, function (err, result) {
+        if (err) {
+            console.log(err)
+        }
+        console.log(result);
+        res.render('mypage/mywriting.ejs', {posts : result})
+    })
+});

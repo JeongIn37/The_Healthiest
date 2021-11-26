@@ -59,40 +59,29 @@
 
                             <tr class>
                             <td class="titilerepresent">글 제목 </td>
-                            <td class="titilerepresent"></td>
+                          
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td class="tilte">글 제목 예시</td>
-                            <td class="btntd"><button OnClick="location.href ='/mypage/revisingwriting'" class="btnposition">수정하기</button></td>
+                    <% for (var i = 0; i < posts.length; i++){ %>
+                        <% if(posts[i].user_id == user_id){ %>
+
+                            <tr style="border-bottom: 1px dotted #83BDFF;">
+                                <td class="title"> 
+                                    <div class="tdparents">
+                                        <div class="tdchild tdchild1"><%= posts[i].title %></div> 
+                                        <div class="tdchild btnparents">
+                                            <div ><button onclick="location.href='/mypage/revisingwriting/<%= posts[i].post_id %>'" class="btnposition">수정하기</button></div>
+                                            <div ><button onclick="location.href='/mypage/revisingwriting/<%= posts[i].post_id %>'" class="deletebtn btnposition">삭제하기</button></div>
+                                        </div>
+                                        
+                                    </div>
+                                </td>
+                              
                           
-                        </tr>
-                        <tr>
-                            <td class="tilte">글 제목 예시</td>
-                            <td class="btntd"><button OnClick="location.href ='/mypage/revisingwriting'" class="btnposition" >수정하기</button></td>
-                           
-                        </tr>
-                        <tr>
-                            <td class="tilte">글 제목 예시</td>
-                            <td class="btntd"><button OnClick="location.href ='/mypage/revisingwriting'" class="btnposition"> 수정하기</button></td>
-                           
-                        </tr>
-                        <tr>
-                            <td class="tilte">글 제목 예시</td>
-                            <td class="btntd"><button OnClick="location.href ='/mypage/revisingwriting'" class="btnposition">수정하기</button></td>
-                          
-                        </tr>
-                        <tr>
-                            <td class="tilte">글 제목 예시</td>
-                            <td class="btntd"><button OnClick="location.href ='/mypage/revisingwriting'" class="btnposition">수정하기</button></td>
-                            
-                        </tr>
-                        <tr>
-                            <td class="tilte">글 제목 예시</td>
-                            <td class="btntd"><button OnClick="location.href ='/mypage/revisingwriting'" class="btnposition">수정하기</button></td>
-                         
-                        </tr>
+                            </tr>
+                        <%} %>
+                    <% } %>
                         
                     </tbody>
                 </table>
