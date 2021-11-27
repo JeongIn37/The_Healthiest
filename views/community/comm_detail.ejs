@@ -57,14 +57,16 @@
             </td>
         </tr>
         <tr>
-          <td style="padding-left:1em; padding-top:3em;"><img src="../../img/icon-thumb-blue.png"> 10 &nbsp;&nbsp;
-          <img src="../../img/icon-comment-blue.png"> 25 </td>
+          <td style="padding-left:1em; padding-top:3em;"><img src="../../img/icon-thumb-blue.png"> <%= data.post_id%7 %> &nbsp;&nbsp;
+          <img src="../../img/icon-comment-blue.png"> <%= data.post_id%11 %> </td>
         </tr>
         <tr>
           <td style="padding-left:1em; padding-top:0.5em;">
             <img onclick="toggleBtnClick()" id="baseImg" src="/img/thumb_before.png">
           </tr>
 
+
+          
 <!-- 댓글 불러오기 -->
 <% for (var i = 0; i < data2.length; i++){ %>
   <% if(data2[i].post_id == data.post_id ){ %>
@@ -76,7 +78,7 @@
     <td style="padding-left:1em;"> <%= data2[i].content %> </td>
   </tr>
   <tr>
-    <td style="padding-left:1em;color:#898989"> <%= data2[i].created_at.substring(11,15) %>/<%= data2[i].created_at.substring(4,7) %>/<%= data2[i].created_at.substring(8,11) %> <%= data2[i].created_at.substring(15,21) %> <span style="color:#0E52A0; padding-left: 0.5em;"><img src="../../img/icon-thumb-blue.png"> 7 </span></td>
+    <td style="padding-left:1em;color:#898989"> <%= data2[i].created_at.substring(11,15) %>/<%= data2[i].created_at.substring(4,7) %>/<%= data2[i].created_at.substring(8,11) %> <%= data2[i].created_at.substring(15,21) %> <span style="color:#0E52A0; padding-left: 0.5em;"><img src="../../img/icon-thumb-blue.png"> <%= data2[i].comment_id%4 %> </span></td>
   </tr>
 
   <%} %>

@@ -154,38 +154,37 @@ app.get("/community", function (req, res) {
   res.render("community/comm_list.ejs");
 });
 
-app.get("/community/free", function (req, res) {
-  db.collection("Post")
-    .find()
-    .toArray(function (error, result) {
-      // console.log(result);
-      res.render("community/comm_free.ejs", { posts: result });
+app.get('/community/free', function (req, res) {
+    db.collection('Post').find().toArray(function (error, result) {
+        res.render('community/comm_free.ejs', { posts: result })
+    })
+});
+
+app.get('/community/bodytype', function (req, res) {
+    db.collection('Post').find().toArray(function (error, result) {
+        res.render('community/comm_body.ejs', { posts: result })
     });
 });
 
-app.get("/community/bodytype", function (req, res) {
-  db.collection("Post")
-    .find()
-    .toArray(function (error, result) {
-      res.render("community/comm_body.ejs", { posts: result });
-    });
-});
+app.get('/community/crew', function (req, res) {
+    db.collection('Post').find().toArray(function (error, result) {
+        res.render('community/comm_crew.ejs', { posts: result })
+    });});
 
-app.get("/community/crew", function (req, res) {
-  res.render("community/comm_crew.ejs");
-});
+app.get('/community/tips', function (req, res) {
+    db.collection('Post').find().toArray(function (error, result) {
+        res.render('community/comm_tips.ejs', { posts: result })
+    });});
 
-app.get("/community/tips", function (req, res) {
-  res.render("community/comm_tips.ejs");
-});
+app.get('/community/meal', function (req, res) {
+    db.collection('Post').find().toArray(function (error, result) {
+        res.render('community/comm_meal.ejs', { posts: result })
+    });});
 
-app.get("/community/meal", function (req, res) {
-  res.render("community/comm_meal.ejs");
-});
-
-app.get("/community/grouporder", function (req, res) {
-  res.render("community/comm_go.ejs");
-});
+app.get('/community/grouporder', function (req, res) {
+    db.collection('Post').find().toArray(function (error, result) {
+        res.render('community/comm_go.ejs', { posts: result })
+    });});
 
 /* community write pages */
 
