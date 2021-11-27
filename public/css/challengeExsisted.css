@@ -115,15 +115,15 @@ body{
     border: #BCDCFF 16px solid;
     background-color: white;
     border-radius: 10px;
-    padding: 2em;
+    padding: 2em;~
     padding-top: 4.5em;
     width: 16.875em;
     height: 16.875em;
-    margin-left: 1.875em;
     justify-content: center;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 80px
+
 }
 .smallbox-text{
     font-weight: 700;
