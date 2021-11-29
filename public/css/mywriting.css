@@ -130,7 +130,24 @@ th, td{
     height: 3.3em;
     border: black 1px solid;
 }
+.tdparents{
+    width: 39em;
+    display: flex;
+    flex-direction: row;  
+    height: 50px;  
+    justify-content: space-between;
+    }
+.tdchild{
+    margin-top: 15px;
+    height: 50px; 
+   
 
+}
+
+.title{
+    height: 66px;
+    vertical-align : top;
+}
 .btntd{
     display: flex;
     justify-content: end;
@@ -145,7 +162,18 @@ th, td{
     color: white;
     height: 2em;
     width: 5.5em;
-    margin-top: 0.7em;
+
     font-size: 18px;
 }
 
+.deletebtn{
+    border: 1px solid black;
+    background-color: white;
+    color:#0E53A0;
+    font-weight: 600;
+}
+
+.btnparents{
+    display: flex;
+    flex-direction: row;
+}
